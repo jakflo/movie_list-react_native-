@@ -4,7 +4,6 @@ import { StyleSheet, Text, View } from 'react-native';
 import MovieList from './pages/moviesList/moviesList';
 import MovieDetail from './pages/movieDetail/movieDetail.js';
 import Player from './pages/player';
-import Test from './pages/test';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
