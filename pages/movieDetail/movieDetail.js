@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
+import { Divider } from 'react-native-elements';
 import AutoResizeImage from '../../components/autoResizeImage.js';
 import { roundToEven } from '../../functions.js';
 import SendRequest from '../../sendRequest.js';
@@ -31,6 +32,7 @@ export default class MovieDetail extends React.Component {
                         <View style={{flex: 1}} id="movie_meta">
                             <h1>{data.title}</h1>
                             <Text id="synopsis">Synopsis: {data.overview}</Text>
+                            <Divider />
                             <Text id="genres">Genres: {data.genres}</Text>
                             <Text id="date">Date: {data.date}</Text>
                             <Text id="score">Score: {data.score}</Text>
